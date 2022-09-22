@@ -1,0 +1,163 @@
+:root{
+    --branco-principal: #FFFFFF;
+    --cinza-secundaria: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --font-principal: 'Inter';
+    --botao-azul-efeito: #3c92fa;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--font-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal{
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container-botao {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.botao-secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container-aviso {
+    font-size: 12px;
+    color: var(--cinza-secundaria);
+}
+
+.container-titulo {
+    font-size: 28px;
+    width: 700;
+}
+
+.container-imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container-caixa {
+    margin: 0 6em; 
+}
+
+.secundario-imagem {
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao-titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao-texto {
+    color: var(--cinza-secundaria);
+}
+
+.secundario-botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container-descricao {
+    padding: 2em;
+}
+
+.dispositivos-lista {
+    display: flex; /* essa tag coloca a imagem um do lado do outro */
+    justify-content: center; /* essa tag coloca todas os item que ta dentro do li no centro da tela */
+    list-style-type: none; /* essa tag  tira as bolinha da lista que fica ao lado do texto */
+    margin: 5em 0; /* essa tag margem na parte de cima e na parte de baixo para afastar */
+}
+
+.dispositivos {
+    text-align: center; /* essa tag coloca o texto centralizado no centro de tela */
+}
+
+.dispositivos-titulo {
+    font-size: 48px; /* essa tag altera o tamanho da font */
+    color: var(--branco-principal);
+}
+
+.lista-item {
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+.rodape-lista {
+    display: flex; /* essa tag colocou os texto dos links um ao lado do outro */
+    justify-content: center; /* essa tag centralizou o texto dos links no centro da tela */
+    list-style-type: none; /* essa tag tira as bolinha da lista  do texto dos links que fica ao lado*/
+    margin-top: 1em 0;
+}
+
+.lista-link, a{
+    text-decoration: none; /* essa tag tira o sublinhado do texto */
+    color: var(--branco-principal);
+    margin-left: 1em;
+}
+
+.rodape-texto {
+    margin: 1em;
+    color: var(--cinza-secundaria);
+    font-size: 14px;
+}
+
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.lista-link, a:hover {
+    color: var(--botao-azul); /*a tag :hover da efeito nos botão quando passa o mause encima do botão */
+ }
+
+.lista-link, a:active {
+    color: purple;  /* a tag :active muda a cor do botão quando vc aperta com o mause em cima do botão */
+}
+
+.container-botao:hover {
+    background: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+    background: #b0c4de;
+    transform: scale(1.1);
+}
+
+.imagem-efeito:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
